@@ -11,8 +11,8 @@ on:
         
   push:
     branches:
-    - master
-  pull_request:  
+      - main
+  #pull_request:  
 
 jobs:
   check:
