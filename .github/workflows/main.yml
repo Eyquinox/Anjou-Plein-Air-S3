@@ -1,4 +1,4 @@
-name: Deploy **prod** website
+name: Deploy PROD website
 
 on:
   workflow_dispatch:
