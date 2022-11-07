@@ -6,8 +6,7 @@ Push to AWS S3 Bucket
 ## Fonctionnement
 
 ### Passage en prod :
-Tout commit dans la branche "master" sera pousser vers le compartiment S3 consulté par le CDN CloudFront.
-
+Tout commit dans la branche "**master**" sera envoyer vers le compartiment S3 consulté par le CDN CloudFront.
 
 ### Commit sur github uniquement :
 Commit dans une autre branche que "master"
