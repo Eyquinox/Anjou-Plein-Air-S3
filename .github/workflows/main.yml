@@ -17,18 +17,6 @@ on:
   #pull_request:  
 
 jobs:
-  check_html:
-    name: Check HTML
-    runs-on: ubuntu-latest
-    steps:
-    - name : Check HTML
-      uses: chabad360/htmlproofer@master
-      with:
-        directory: "public"
-        # The directory to scan
-        arguments: --allow-missing-href
-        # The arguments to pass to HTMLProofer
-
   check:
     name: Broken Link Check
     runs-on: ubuntu-latest
@@ -38,7 +26,7 @@ jobs:
 
   deploy:
     name: Déploiement vers AWS
-    needs: [check, check_html]
+    needs: check
     runs-on: ubuntu-latest
     steps:
     - name: Building envirnment
