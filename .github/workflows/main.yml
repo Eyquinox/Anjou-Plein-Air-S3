@@ -21,11 +21,13 @@ jobs:
     name: Check HTML
     runs-on: ubuntu-latest
     steps:
-      - name: HTML5Validator
-        uses: Cyb3r-Jak3/html5validator-action@master
-        with:
-          root: public/
-          css: true
+    - name : Check HTML
+      uses: chabad360/htmlproofer@master
+      with:
+        directory: "/public"
+        # The directory to scan
+        arguments: --allow-missing-href
+        # The arguments to pass to HTMLProofer
 
   check:
     name: Broken Link Check
