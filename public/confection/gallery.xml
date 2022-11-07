@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpleviewergallery maxImageWidth="590" maxImageHeight="480" textColor="0xFFFFFF" frameColor="0xFFFFFF" frameWidth="3" stagePadding="10" navPadding="10" thumbnailColumns="3" thumbnailRows="2" navPosition="left" vAlign="center" hAlign="center" title="Contactez-nous pour un devis" enableRightClickOpen="true" backgroundImagePath="" imagePath="" thumbPath="">
+<image>
+	<filename>sidecar-confection-anjoupleinair.png</filename>
+	<caption><![CDATA[Confection sur mesure toit décapotable pour side-car]]></caption>	
+</image>
+<image>
+	<filename>sellerie-tapisserie-angers.png</filename>
+	<caption><![CDATA[Sellier tapissier]]></caption>	
+</image>
+<image>
+	<filename>avancee-mobilhome-angers.png</filename>
+	<caption><![CDATA[Avancée de Mobil-home sur mesure. Vendu également en neuf + terrasse]]></caption>	
+</image>
+<image>
+	<filename>voiture-interieur-anjoupleinair.png</filename>
+	<caption><![CDATA[Remplacement du tissu intérieur d'une voiture de collection]]></caption>	
+</image>
+<image>
+	<filename>facade-pvc-hangar.png</filename>
+	<caption><![CDATA[Réalisation d'une façade en bâche PVC]]></caption>	
+</image>
+<image>
+	<filename>stores-enseignes-angers.png</filename>
+	<caption><![CDATA[Réalisation de stores commerciaux sur mesure]]></caption>	
+</image>
+<image>
+	<filename>bache-camion-marchand-ambulant.png</filename>
+	<caption><![CDATA[Avancée pour l'acceuil de la clientèle pour marchands ambulants]]></caption>	
+</image>
+<image>
+	<filename>siege_bateaux.JPG</filename>
+	<caption><![CDATA[Réfection de sièges de bateaux]]></caption>	
+</image>
+<image>
+	<filename>entourage-hangar-bache.png</filename>
+	<caption><![CDATA[Entourage hangar en bâche PVC avec fenêtre.]]></caption>	
+</image>
+<image>
+	<filename>taud-bateau-anjoupleinair.png</filename>
+	<caption><![CDATA[Confection de tauds de bateaux sur mesure]]></caption>	
+</image>
+
+<image>
+	<filename>housse-bache-camion-enceinte.png</filename>
+	<caption><![CDATA[Housse en bâche PVC pour Enceintes Professionnelles]]></caption>	
+</image>
+<image>
+	<filename>capote-voiture-sellier.png</filename>
+	<caption><![CDATA[Capote pour 4x4 réalisée sur mesure]]></caption>	
+</image>
+<image>
+	<filename>tonnelle_terrasse.JPG</filename>
+	<caption><![CDATA[Création sur mesure de tonnelle]]></caption>	
+</image>
+<image>
+	<filename>terrasse_snack.jpg</filename>
+	<caption><![CDATA[Entourage de terrasse de Snack]]></caption>	
+</image>
+<image>
+	<filename>coussins_rideaux_caravanes.JPG</filename>
+	<caption><![CDATA[Réfection de coussins de Caravanes, Mobil-Home,..Rideaux]]></caption>	
+</image>
+
+</simpleviewergallery>
