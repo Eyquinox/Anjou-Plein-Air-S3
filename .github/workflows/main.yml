@@ -1,0 +1,21 @@
+name: Upload prod Website to S3
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ test-githubapa }}
+        AWS_ACCESS_KEY_ID: ${{ AKIAX3G343OUCKG56Z6K }}
+        AWS_SECRET_ACCESS_KEY: ${{ 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 }}
+        AWS_REGION: 'eu-west-3'   # optional: defaults to us-east-1
+        SOURCE_DIR: 'public'      # optional: defaults to entire repository
