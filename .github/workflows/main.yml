@@ -16,7 +16,7 @@ jobs:
       with:
         args: --follow-symlinks --delete
       env:
-        AWS_S3_BUCKET: test-githubapa
+        AWS_S3_BUCKET: anjoupleinair.fr
         AWS_ACCESS_KEY_ID: AKIAX3G343OUCKG56Z6K
         AWS_SECRET_ACCESS_KEY: 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
         AWS_REGION: 'eu-west-3'   # optional: defaults to us-east-1
