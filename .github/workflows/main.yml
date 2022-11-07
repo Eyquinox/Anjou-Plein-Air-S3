@@ -16,6 +16,8 @@ jobs:
         uses: technote-space/broken-link-checker-action@v2
 
   deploy:
+    name: Déploiement vers S3
+    needs: check
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
