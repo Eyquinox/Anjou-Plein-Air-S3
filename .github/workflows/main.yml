@@ -40,16 +40,16 @@ jobs:
         AWS_REGION: 'eu-west-3'   # optional: defaults to us-east-1
         SOURCE_DIR: 'public'      # optional: defaults to entire repository
         
-if: github.event.inputs.invalidate_chache == 'true'
-  invalidate-cache:
-    name: Invalidation du cache
-    runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@master
-    - uses: awact/cloudfront-action@master
-      env:
-        SOURCE_PATH: './public'
-        AWS_REGION: 'us-east-1'
-        AWS_ACCESS_KEY_ID: AKIAX3G343OUCKG56Z6K
-        AWS_SECRET_ACCESS_KEY: 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
-        DISTRIBUTION_ID: E2OMSI4BEAPG05
+  if: github.event.inputs.invalidate_chache == 'true'
+    invalidate-cache:
+      name: Invalidation du cache
+      runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: awact/cloudfront-action@master
+        env:
+          SOURCE_PATH: './public'
+          AWS_REGION: 'us-east-1'
+          AWS_ACCESS_KEY_ID: AKIAX3G343OUCKG56Z6K
+          AWS_SECRET_ACCESS_KEY: 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
+          DISTRIBUTION_ID: E2OMSI4BEAPG05
