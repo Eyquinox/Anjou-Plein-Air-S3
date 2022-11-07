@@ -1,3 +1,4 @@
+[![Upload prod Website to S3](https://github.com/Eyquinox/Anjou-Plein-Air-S3/actions/workflows/main.yml/badge.svg)](https://github.com/Eyquinox/Anjou-Plein-Air-S3/actions/workflows/main.yml)
 # Anjou-Plein-Air-S3
 Push to AWS S3 Bucket
 
