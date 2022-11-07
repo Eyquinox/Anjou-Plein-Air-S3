@@ -1,0 +1,482 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	background-color: #E3E3E6;
+	background-image: url(images/Grungemaps0022_7_S.jpg);
+
+}
+
+/* Banner infos */
+.header-infos {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	grid-auto-columns: 1fr;
+	-ms-grid-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	-ms-grid-rows: auto auto;
+	grid-template-rows: auto auto;
+	background-color: rgb(140, 183, 216);
+  }
+  .image-2 {
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+	margin-right: 30px;
+	margin-bottom: 5px;
+  }
+
+.text-block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 28px;
+	line-height: 30px;
+	font-style: normal;
+	text-align: center;
+	text-decoration: none;
+}
+
+.link-block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 2000px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	color: #333;
+	text-decoration: none;
+  }
+
+/* End Banner infos */
+
+h1, h2, h3 {
+	color: #313131;
+}
+
+h1 {
+	margin-bottom: .5em;
+	font-size: 182%;
+	font-weight: normal;
+	letter-spacing: -2px;
+}
+
+h2 {
+	margin-bottom: .5em;
+	font-size: 136%;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+
+h3 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+p, blockquote, ol, ul {
+	margin-bottom: 1.5em;
+	text-align: justify;
+	line-height: 167%;
+	font-size: 107%;
+}
+
+blockquote {
+	margin-left: 2em;
+}
+
+ol {
+	margin-left: 2em;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	padding-left: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu {
+	width: 870px;
+	height: 60px;
+	text-align: center;
+	background-color: #006666;
+	margin-right: auto;
+	margin-left: auto;
+	border-right-width: 5px;
+	border-left-width: 5px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #000000;
+	border-left-color: #000000;
+}
+#menu .last  a {
+	background-color: #7495C9;
+
+}
+
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	padding: 0;
+	background: none;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	height: 45px;
+	font-size: 120%;
+	font-weight: bold;
+	padding-top: 15px;
+	color: #FFFFFF;
+	width: 174px;
+	text-align: center;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #7495C9;
+	width: 174px;
+}
+
+#menu b {
+	 text-decoration: underline;
+}
+
+/* Logo */
+
+#logo {
+	width: 870px;
+	height: 180px;
+	background-color: #FFFFFF;
+	background-image: url(images/accueil-anjoupleinair-camping.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-right-width: 5px;
+	border-right-style: solid;
+	border-right-color: #000000;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #000000;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #000000;
+}
+
+#logo h1 {
+	margin: 0;
+	padding: 120px 0 0 0;
+	text-align: right;
+	letter-spacing: -1px;
+	font-size: 189%;
+}
+
+#logo h2 {
+	margin: 0;
+	padding: 0 0 0 0;
+	text-align: right;
+	letter-spacing: -1px;
+	font-size: 100%;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Page */
+
+#page {
+	width: 870px;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #000000;
+	border-right-width: 5px;
+	border-right-style: solid;
+	border-right-color: #000000;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: #E3E3E6;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 580px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#content1 {
+	float: left;
+	padding: 20px 30px 20px 30px;
+	width: 795px;
+	border-right-width: 5px;
+	border-right-style: solid;
+	border-right-color: #000000;
+}
+
+
+#welcome {
+	margin-bottom: 10px;
+	padding-bottom: 1px;
+	width: 580px;
+}
+.floating-box {
+	color: #000000;
+	float: left;
+	width: 590px;
+	padding-right: 10px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#floating {
+	float: left;
+	width: 590px;
+	padding-right: 10px;
+	height: 420px;
+}
+.pub {
+	float: left;
+	width: 590px;
+	padding-right: 10px;
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#product {
+	height: 120px;
+	width: 135px;
+	float: left;
+	text-align: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+#product a:hover {
+	text-decoration: none;
+}
+
+
+
+
+#bloc {
+	height: 400px;
+	width: 380px;
+	padding-right: 5px;
+	padding-left: 5px;
+	float: left;
+}
+#bloc h2 {
+	color: #002B6F;
+	font-size: 20px;
+
+}
+#bloc h3 {
+	color: #000000;
+	font-size: 16px;
+}
+
+#bloc1 {
+	height: 430px;
+	width: 180px;
+	float: left;
+	background-color: #FFFFFF;
+}
+#bloc2 {
+	height: 310px;
+	width: 230px;
+	float: left;
+	border-top-width: 5px;
+	border-top-style: dashed;
+	border-top-color: #002B6F;
+	padding-left: 5px;
+}
+#bloc2 h2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #002B6F;
+
+}
+#bloc2 h3 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+}
+#bloc3 {
+	height: 230px;
+	width: 230px;
+	float: right;
+	border-top-width: 5px;
+	border-top-style: dashed;
+	border-top-color: #002B6F;
+	padding-left: 5px;
+    background-color: white;
+}
+#bloc3 h2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #002B6F;
+}
+
+
+
+
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 235px;
+	text-align: center;
+	vertical-align: middle;
+	border-left-width: 5px;
+	border-left-style: dashed;
+	border-left-color: #002B6F;
+	height: 550px;
+	background-color: #7495C9;
+}
+
+
+/* Footer */
+
+#footer {
+	height: 50px;
+	width: 870px;
+	margin: 0 auto;
+	border-right-width: 5px;
+	border-left-width: 5px;
+	border-bottom-width: 5px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #000000;
+	border-left-color: #000000;
+}
+
+#footer .wrapper {
+	width: 880px;
+	margin: 0 auto;
+}
+
+
+#footer .links {
+	float: left;
+	width: 570px;
+	height: 34px;
+	padding: 16px 30px 0 30px;
+	font-size: 85%;
+	background-color: #7495C9;
+}
+
+#footer .legal {
+	float: left;
+	width: 220px;
+	height: 34px;
+	margin: 0 auto;
+	padding: 16px 20px 0 0;
+	background: #000000;
+	text-align: right;
+	font-size: 85%;
+	color: #FFFFFF;
+}
+#flashcontent {
+	float: left;
+	width: 590px;
+	padding-right: 10px;
+	height: 420px;
+}
+#product1 {
+	height: 120px;
+	width: 430px;
+	float: left;
+	text-align: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
