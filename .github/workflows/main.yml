@@ -1,6 +1,7 @@
 name: Upload prod Website to S3
 
 on:
+  workflow_dispatch:
   push:
     branches:
     - master
