@@ -19,6 +19,8 @@ on:
 jobs:
   check:
     name: Broken Link Check
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - name: Broken Link Check
