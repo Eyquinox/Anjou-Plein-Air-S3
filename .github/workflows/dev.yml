@@ -5,19 +5,23 @@ on:
   push:
     branches:
     - dev
-  pull_request:
+    paths:
+    - public/**
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: https://beta.anjoupleinair.fr
     steps:
     - uses: actions/checkout@master
     - uses: jakejarvis/s3-sync-action@master
       with:
         args: --follow-symlinks --delete
       env:
-        AWS_S3_BUCKET: beta.anjoupleinair.fr
-        AWS_ACCESS_KEY_ID: AKIAX3G343OUCKG56Z6K
-        AWS_SECRET_ACCESS_KEY: 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
+        AWS_S3_BUCKET: ${{ vars.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'eu-west-3'   # optional: defaults to us-east-1
         #SOURCE_DIR: 'public'       optional: defaults to entire repository
