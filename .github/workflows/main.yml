@@ -42,9 +42,9 @@ jobs:
     - name: configure aws credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::539479563176:role/Allow-push-github-apa
-        role-session-name: samplerolesession
-        aws-region: ${{ env.AWS_REGION }}
+        role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE }}
+        role-session-name: OIDCSession
+        aws-region: 'us-east-1'
     - name: Push to S3
       uses: jakejarvis/s3-sync-action@master
       with:
