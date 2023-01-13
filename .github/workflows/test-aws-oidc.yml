@@ -1,4 +1,4 @@
-name: Deploy PROD website
+name: Test AWS OIDC
 
 on:
   workflow_dispatch:
@@ -17,6 +17,9 @@ jobs:
   aws:
     name: test AWS
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://anjoupleinair.fr
     permissions:
       id-token: write # This is required for requesting the JWT
       contents: read  # This is required for actions/checkout
