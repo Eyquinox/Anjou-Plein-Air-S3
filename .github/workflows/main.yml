@@ -37,8 +37,8 @@ jobs:
       name: production
       url: https://anjoupleinair.fr
     steps:
-    - name: Building envirnment
-      uses: actions/checkout@master
+    #- name: Building envirnment
+      #uses: actions/checkout@master
     - name: configure aws credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
