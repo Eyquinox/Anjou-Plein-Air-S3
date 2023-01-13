@@ -29,7 +29,6 @@ jobs:
     - name:  Move file to s3
         run: aws s3 mv /public s3://${{ env.AWS_S3_BUCKET }}/
         shell: bash
-
     #- uses: jakejarvis/s3-sync-action@master
       #with:
         #args: --follow-symlinks --delete
