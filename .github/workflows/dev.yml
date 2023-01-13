@@ -14,9 +14,9 @@ jobs:
     environment:
       name: staging
       url: https://beta.anjoupleinair.fr
-      permissions:
-        id-token: write # This is required for requesting the JWT
-        contents: read  # This is required for actions/checkout
+    permissions:
+      id-token: write # This is required for requesting the JWT
+      contents: read  # This is required for actions/checkout
     steps:
     - name: Building envirnment
       uses: actions/checkout@v2
@@ -27,8 +27,9 @@ jobs:
         role-session-name: OIDCSession
         aws-region: 'us-east-1'
     - name:  Move file to s3
-        run: aws s3 mv /public s3://${{ env.AWS_S3_BUCKET }}/
-        shell: bash
+      run: aws s3 mv /public s3://${{ env.AWS_S3_BUCKET }}/
+      shell: bash
+
     #- uses: jakejarvis/s3-sync-action@master
       #with:
         #args: --follow-symlinks --delete
