@@ -26,9 +26,9 @@ jobs:
         role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE }}
         role-session-name: OIDCSession
         aws-region: 'us-east-1'
-    - name:  Copy index.html to s3
-        run: |
-          aws s3 mv / s3://${{ env.AWS_S3_BUCKET }}/
+    - name:  Move file to s3
+        run: aws s3 mv /public s3://${{ env.AWS_S3_BUCKET }}/
+        shell: bash
     #- uses: jakejarvis/s3-sync-action@master
       #with:
         #args: --follow-symlinks --delete
