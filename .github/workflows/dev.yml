@@ -27,7 +27,7 @@ jobs:
         role-session-name: OIDCSession
         aws-region: 'us-east-1'
     - name:  Move file to s3
-      run: aws s3 cp public s3://${{ vars.AWS_S3_BUCKET }}/ --recursive
+      run: aws s3 cp public s3://${{ vars.AWS_S3_BUCKET }}/
       shell: bash
     #- uses: jakejarvis/s3-sync-action@master
       #with:
