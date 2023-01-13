@@ -14,14 +14,27 @@ jobs:
     environment:
       name: staging
       url: https://beta.anjoupleinair.fr
+      permissions:
+        id-token: write # This is required for requesting the JWT
+        contents: read  # This is required for actions/checkout
     steps:
-    - uses: actions/checkout@master
-    - uses: jakejarvis/s3-sync-action@master
+    - name: Building envirnment
+      uses: actions/checkout@v2
+    - name: configure aws credentials
+      uses: aws-actions/configure-aws-credentials@v1
       with:
-        args: --follow-symlinks --delete
-      env:
-        AWS_S3_BUCKET: ${{ vars.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'eu-west-3'   # optional: defaults to us-east-1
+        role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE }}
+        role-session-name: OIDCSession
+        aws-region: 'us-east-1'
+    - name:  Copy index.html to s3
+        run: |
+          aws s3 mv / s3://${{ env.AWS_S3_BUCKET }}/
+    #- uses: jakejarvis/s3-sync-action@master
+      #with:
+        #args: --follow-symlinks --delete
+      #env:
+        #AWS_S3_BUCKET: ${{ vars.AWS_S3_BUCKET }}
+        #AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        #AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        #AWS_REGION: 'eu-west-3'   # optional: defaults to us-east-1
         #SOURCE_DIR: 'public'       optional: defaults to entire repository
