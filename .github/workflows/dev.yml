@@ -2,11 +2,11 @@ name: Upload dev Website to S3 beta.anjoupleinair.fr
 
 on:
   workflow_dispatch:
-  push:
+  pull_request:
+    types:
+      - opened
     branches:
-    - dev
-    paths:
-    - public/**
+      - main
 
 jobs:
   deploy:
