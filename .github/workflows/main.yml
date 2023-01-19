@@ -49,8 +49,8 @@ jobs:
     - name:  Move file to s3
       run: |
           aws s3 sync ./public s3://${{ vars.AWS_S3_BUCKET }}/
-    - if: github.event.inputs.invalidate_chache == 'true'
-      name: Invalidate cache
+    #- if: github.event.inputs.invalidate_chache == 'true'
+    - name: Invalidate cache
       uses: awact/cloudfront-action@master
       env:
         SOURCE_PATH: '/'
