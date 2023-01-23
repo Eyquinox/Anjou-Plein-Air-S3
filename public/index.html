@@ -36,6 +36,22 @@
     </script>
     <!--fin balise google anlaytics
     Menu banniere Logo-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        if (localStorage.getItem("MAN-ModalCHGAddr")===null) {
+            ShowModalCHGAddr();
+        }
+        function ShowModalCHGAddr () {
+            swal({
+                title: "Anjou Plein Air déménage",
+                text: "En raison du transfert de notre activité dans nos nouveaux locaux, l'atelier sera fermé du lundi 23 au vendredi 27 janvier inclus. \n\n Retrouvez-nous à partir du lundi 30 janvier au 17 rue de la Fuye à les Garennes sur Loire. \n \n" +
+                    "Merci pour votre compréhension.",
+                icon: "info",
+                button: "OK",
+            }) .then((value) => {
+                localStorage['MAN-ModalCHGAddr'] = true });
+        }
+    </script>
     <div id="logo"></div>
      <div id="menu">
         <ul>
