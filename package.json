@@ -1,0 +1,11 @@
+{
+  "name": "anjou-plein-air-s3",
+  "version": "1.0.0",
+  "description": "Tests for Anjou Plein Air S3",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
